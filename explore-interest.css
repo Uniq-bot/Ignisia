@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+.explore-interest{
+    /* background-color: #94618E;  */
+    height:500px;
+    color:rgb(101, 120, 224);
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-template-rows:1fr 1fr;
+    margin:50px 300px;
+    row-gap:40px;
+    column-gap: 50px;
+    min-height:50vh;
+    color:black;
+}
+.category-card{
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.15);
+    background-color:whitesmoke;
+    cursor: pointer;
+    transition:1s  ;
+    -webkit-transition:1s  ;
+    -moz-transition:1s  ;
+    -ms-transition:1s  ;
+    -o-transition:1s  ;
+}
+.category-card:hover{
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+}
+.category-card span{
+    padding-top: 13px;
+    font-size: 25px;
+}
+.category-card p{
+    margin-top:30px;
+    font-size: 17px;
+}
+.category-card button{
+    border:none;
+    margin-top:42px;
+    margin-left:230px;
+}
+.category-card button:hover{
+    border-bottom: 1px solid black;
+}
+.category-card button:active{
+    background-color: whitesmoke;
+    border-color:whitesmoke;
+}
