@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-color: #fff;
+    color: #000;
+}
+.heading{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 2fr 1fr; 
+    gap: 30px;
+}
+
+.contact-info {
+    border-left: 4px solid #ccc;
+    padding-left: 20px;
+}
+
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group span {
+    color: #0047AB;
+}
+
+.input-group input, 
+.input-group textarea {
+    padding: 8px;
+    border: 1px solid #000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: 1px solid #0043AB;
+    background-color: transparent;
+    color: #0043AB;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h3 {
+    color: #0047AB;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.info-section p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+a{
+    color: black;
+}
+
+.social-icons a:nth-of-type(1){
+    color: blue ;
+}
+.social-icons a:nth-of-type(2){
+    background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+     -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-icons a:nth-of-type(3){
+    color: blue ;
+}
+
+
