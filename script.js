@@ -155,3 +155,21 @@ window.addEventListener('load', () => {
     // Use a slightly longer interval to prevent overlap
     setInterval(showNextTestimonial, 5500);
 });
+
+
+
+
+
+// handle links 
+
+const contacts = document.querySelectorAll('.contact');
+contacts.forEach(contact => {
+    contact.addEventListener('click', (e) => {
+        e.preventDefault();
+        handleContact();
+    });
+});
+const handleContact=()=>{
+    window.location = '../contact.html';
+    console.log('clicked contact');
+}

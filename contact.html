@@ -10,14 +10,13 @@
 <body>
      <div id="header">
             <div id="logo">
-                <h1>Ignisia.</h1>
+                <h1><a href="./landing page/index.html">Ignisia.</a></h1>
             </div>
             <div id="nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Galleries</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./landing page/index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#galleries">Galleries</a></li>
                     <li><button>Sign In</button></li>
                 </ul>
             </div>
@@ -51,7 +50,7 @@
 
             <div class="input-group">
                 <label for="message">Message <span>*</span></label>
-                <textarea id="message" name="message" rows=8" required></textarea>
+                <textarea id="message" name="message" rows=8 required></textarea>
             </div>
 
             <div class="buttons">
@@ -59,6 +58,14 @@
             <button type="reset"  class="reset-button">Reset</button></div>
         </form>
         
+</div>
+<div class="success-message" style="display: none;">
+    <div class="success-content">
+        <i class="fas fa-check-circle"></i>
+        <h2>Thank You!</h2>
+        <p>Your message has been successfully sent.</p>
+        <button class="continue-button" onclick="window.location = './index.html';">Continue Exploring</button>
+    </div>
 </div>
 <footer class="footer">
         <div class="footer-content">
@@ -104,5 +111,7 @@
             <p>&copy; 2025 Ignisia. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="contact.js"></script>
 </body>
 </html>
