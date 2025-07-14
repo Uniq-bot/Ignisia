@@ -76,6 +76,28 @@ window.addEventListener('load', () => {
 
 });
 
+
+// Hamburger Menu Functionality
+const hamburgerBtn = document.querySelector('.hamburger');
+const nav = document.querySelector('#nav');
+
+// Add event listener to hamburger button
+hamburgerBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent click from bubbling up
+    nav.classList.toggle('show');
+    hamburgerBtn.classList.toggle('active');
+});
+
+// Close menu when clicking outside
+window.addEventListener('click', (e) => {
+    if (!hamburgerBtn.classList.contains('active')) return;
+    
+    if (!hamburgerBtn.contains(e.target) && !nav.contains(e.target)) {
+        nav.classList.remove('show');
+        hamburgerBtn.classList.remove('active');
+    }
+});
+
 // Testimonials data
 const testimonials = [
     {
