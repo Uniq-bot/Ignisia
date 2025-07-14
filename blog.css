@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#page{
+    width: 100%;
+    margin: auto;
+}
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    align-items: center;
+    background: white;
+    z-index: 1000;
+}
+
+
+
+#logo{
+    width: auto;
+}
+#nav{
+    width: auto;
+}   
+#nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    padding: 0;
+}
+
+#nav ul li {
+    position: relative;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+#nav ul li a:hover {
+    color: #0047AB;
+}
+
+#nav ul li button {
+    background: #0047AB;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+#nav ul li button:hover {
+    background: #003380;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    background: #0047AB;
+    gap: 2em;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 999;
+}
+.hero h1{
+    color: white;
+    font-size: 4rem;
+}
+.hero p{
+    color: white;
+    font-size: 1.5rem;
+}
+.hero i{
+    color: white;
+}
+
+.main-content{
+    width: 100%;
+    min-height: 50vh;
+    background: #cacdd1;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    margin-top: -2em;
+
+}
+.main-content .slogan{
+    width: 100%;
+    height: 10vh;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.slogan h3{
+    width: 80%;
+    color: #333;
+    padding: 0 2em;
+    text-align: center;
+}
+
+.blog-contents{
+    width: 100%;
+    min-height: 50vh;
+    padding: 2em 2em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: auto;
+}
+.blogcontent{
+    width: 70%;
+    min-height: 100vh;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.blog-post{
+    width: 100%;
+    min-height: 20vh;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.blog-post img{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 20px;
+    }
+.blog-post .post-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.blog-post .post-info h3{
+    width: 100%;
+    color: #333;
+}
+.blog-post .post-info p{
+    width: 100%;
+    color: #666;
+}   
+.blog-post .post-info .show-more{
+    width: 10vw;
+    color: #666;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+.searchedcontent{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+.posts-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.post-item:hover {
+    background: #f5f5f5;
+    transform: translateX(5px);
+}
+
+.post-item h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.post-item p {
+    font-size: 0.8rem;
+    color: #666;
+}
+.searchh{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: 2em;
+    background-color: #333;
+    border-radius: 20px;
+}
+.searchh input{
+    width: 80%;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.searchh button{
+    background-color: transparent;
+    font-size: 1em;
+
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+.recentPost{
+    width: 100%;
+    min-height: 50vh;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    border-radius: 20px;
+    border: 2px solid #333;
+}
+
+
+
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 5rem 0 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.footer-section p {
+    color: #b3b3b3;
+    margin-bottom: 1rem;
+}
+
+.footer-section .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-section .social-links a {
+    color: #b3b3b3;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section .social-links a:hover {
+    color: #5f55ee;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-section ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #5f55ee;
+}
+
+.footer-section .newsletter-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-section .newsletter-form input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.footer-section .newsletter-form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #5f55ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section .newsletter-form button:hover {
+    background-color: #4a40d3;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    margin-top: 3rem;
+}
+
+.footer-bottom p {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
