@@ -63,8 +63,11 @@ btn.addEventListener('click', (e) => {
         
         // Show success message
         const successMessage = document.querySelector('.success-message');
+        const page = document.querySelector('#page');
+        page.style.display = 'none';
         successMessage.style.display = 'flex';
-        
+
+
         // Add event listener for continue button
         document.querySelector('.continue-button').addEventListener('click', () => {
             // Reset form and show it again
